@@ -1,0 +1,16 @@
+{
+    "perl"          : "6",
+    "name"          : "Gray::Code::RBC",
+    "version"       : "0.0.1",
+    "description"   : "reflected binary Gray Code encoder/decoder",
+    "authors"       : [ "Steve Schulze (thundergnat)" ],
+    "provides"      : { "Gray::Code::RBC" : "lib/Gray/Code/RBC.pm6" },
+    "depends"       : [ ],
+    "build-depends" : [ ],
+    "test-depends"  : [ ],
+    "license"       : "Artistic-2.0",
+    "resources"     : [ ],
+    "source-type"   : "git",
+    "source-url"    : "git://github.com/thundergnat/Gray-Code-RBC.git",
+    "tags"          : [ "Gray", "reflected binary" ]
+}

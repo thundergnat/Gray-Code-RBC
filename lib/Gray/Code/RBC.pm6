@@ -1,9 +1,10 @@
 use v6.c;
-unit class Gray::Code::RBC:ver<0.0.2>;
+unit class Gray::Code::RBC:ver<0.0.3>;
 
-sub gray-encode ( Str(Int) \n --> Int ) is export { n +^ ( n +> 1 ) }
+sub gray-encode ( \n where Int|Str --> Int ) is export { n +^ ( n +> 1 ) }
 
-sub gray-decode ( Str(Int) $n is copy --> Int ) is export {
+sub gray-decode ( $n is copy where Int|Str --> Int ) is export {
+    $n.=Int;
     my $mask = 2 +< ($n.msb // 0);
     $n +^= $mask +> 1 if $n +& $mask while $mask +>= 1;
     $n

@@ -1,7 +1,9 @@
 use v6.c;
 unit class Gray::Code::RBC:ver<0.0.3>;
 
-sub gray-encode ( \n where Int|Str --> Int ) is export { n +^ ( n +> 1 ) }
+sub gray-encode ( $n  is copy where Int|Str --> Int ) is export {
+    $n.=Int;
+    $n +^ ( $n +> 1 ) }
 
 sub gray-decode ( $n is copy where Int|Str --> Int ) is export {
     $n.=Int;

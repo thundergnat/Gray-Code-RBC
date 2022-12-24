@@ -1,14 +1,14 @@
-NAME
-====
+[![Actions Status](https://github.com/thundergnat/Gray-Code-RBC/actions/workflows/test.yml/badge.svg)](https://github.com/thundergnat/Gray-Code-RBC/actions)
 
-Gray::Code::RBC - A simple implementation of reflected binary Gray code
+NAME Gray::Code::RBC
+====================
 
-[![Build Status](https://travis-ci.org/thundergnat/Gray-Code-RBC.svg?branch=master)](https://travis-ci.org/thundergnat/Gray-Code-RBC)
+A simple implementation of reflected binary Gray code
 
 SYNOPSIS
 ========
 
-```perl6
+```raku
 use Gray::Code::RBC;
 
 say gray-encode(73);
@@ -29,7 +29,7 @@ DESCRIPTION
 
 Gray code is an integer encoding such that adjacent values differ by at most one bit.
 
-```perl6
+```raku
                   binary   decimal     de-    round-
 number  binary    encoded  encoded    coded    trip
  0:      0000  =>   0000      0   =>   0000      0
@@ -56,11 +56,11 @@ Gray::Code::RBC is a simple implementation of the most common: reflected binary 
 
 Exports two routines:
 
-    gray-encode() - Convert a decimal Integer to Gray code (Takes an Integer, returns an Integer).
+    C<gray-encode()> - Convert a decimal Integer to Gray code (Takes an Integer, returns an Integer).
 
 and
 
-    gray-decode() - Convert a Gray code value to a decimal Integer (Takes an Integer, returns an Integer).
+    C<gray-decode()> - Convert a Gray code value to a decimal Integer (Takes an Integer, returns an Integer).
 
 Both routines only accept and return Integers (or a String that can be coerced to an Integer). Any conversion to or from binary falls to other code.
 

@@ -1,5 +1,4 @@
-use v6.c;
-unit class Gray::Code::RBC:ver<0.0.3>;
+unit class Gray::Code::RBC:ver<0.0.4>;
 
 sub gray-encode ( $n  is copy where Int|Str --> Int ) is export {
     $n.=Int;
@@ -16,14 +15,13 @@ sub gray-decode ( $n is copy where Int|Str --> Int ) is export {
 =begin pod
 
 =head1 NAME
+Gray::Code::RBC
 
-Gray::Code::RBC - A simple implementation of reflected binary Gray code
-
-[![Build Status](https://travis-ci.org/thundergnat/Gray-Code-RBC.svg?branch=master)](https://travis-ci.org/thundergnat/Gray-Code-RBC)
+A simple implementation of reflected binary Gray code
 
 =head1 SYNOPSIS
 
-=begin code :lang<perl6>
+=begin code :lang<raku>
 
 use Gray::Code::RBC;
 
@@ -45,7 +43,7 @@ say gray-encode("١٢٣");
 
 Gray code is an integer encoding such that adjacent values differ by at most one bit.
 
-=begin code :lang<perl6>
+=begin code :lang<raku>
                   binary   decimal     de-    round-
 number  binary    encoded  encoded    coded    trip
  0:      0000  =>   0000      0   =>   0000      0
@@ -75,11 +73,11 @@ who originally popularized and patented it.)
 
 Exports two routines:
 
-    gray-encode() - Convert a decimal Integer to Gray code (Takes an Integer, returns an Integer).
+    C<gray-encode()> - Convert a decimal Integer to Gray code (Takes an Integer, returns an Integer).
 
 and
 
-    gray-decode() - Convert a Gray code value to a decimal Integer (Takes an Integer, returns an Integer).
+    C<gray-decode()> - Convert a Gray code value to a decimal Integer (Takes an Integer, returns an Integer).
 
 Both routines only accept and return Integers (or a String that can be coerced
 to an Integer). Any conversion to or from binary falls to other code.

@@ -1,7 +1,10 @@
 Revision history for Gray-Code-RBC
 
-0.0.1 - Initial version
+{{$NEXT}}
+      - Migrate to fez ecosystem
+
+0.0.3 - Fix coercion signature. Added testing to excercise.
 
 0.0.2 - Slight simplification
 
-0.0.3 - Fix coercion signature. Added testing to excercise.
+0.0.1 - Initial version

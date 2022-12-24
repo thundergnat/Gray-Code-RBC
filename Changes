@@ -1,6 +1,8 @@
 Revision history for Gray-Code-RBC
 
 {{$NEXT}}
+
+0.0.4  2022-12-24T11:07:35-05:00
       - Migrate to fez ecosystem
 
 0.0.3 - Fix coercion signature. Added testing to excercise.

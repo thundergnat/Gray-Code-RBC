@@ -73,11 +73,11 @@ who originally popularized and patented it.)
 
 Exports two routines:
 
-    C<gray-encode()> - Convert a decimal Integer to Gray code (Takes an Integer, returns an Integer).
+C<gray-encode()> - Convert a decimal Integer to Gray code (Takes an Integer, returns an Integer).
 
 and
 
-    C<gray-decode()> - Convert a Gray code value to a decimal Integer (Takes an Integer, returns an Integer).
+C<gray-decode()> - Convert a Gray code value to a decimal Integer (Takes an Integer, returns an Integer).
 
 Both routines only accept and return Integers (or a String that can be coerced
 to an Integer). Any conversion to or from binary falls to other code.
